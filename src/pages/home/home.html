@@ -1,14 +1,36 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class="background">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="container">
+    <h1  class="header">Simon Game</h1>
+    
+    <div class="box">
+      <div class="box-wrap">
+        
+        <div class="row">
+          <div id="green" class="btn-press green" (click)="select(0)"></div>
+          <div id="red" class="btn-press red" (click)="select(1)"></div>
+        </div>
+        <div class="row">
+          <div id="yellow" class="btn-press yellow" (click)="select(2)"></div>
+          <div id="blue" class="btn-press blue" (click)="select(3)"></div>
+        </div>
+        
+        <div class="interface">
+          <div class="interface-wrap">
+            <div class="level">{{game.level}}</div>
+            <div class="mode">
+              <a class="start" id="start" (click)="onStart()">Start</a>
+              <a id="strict" (click)="onStrict()" [ngClass]="isStrict ? 'strict-active' : 'strict-inactive'"></a>
+            </div>
+          </div>
+        </div><!-- end interface -->
+        
+      </div>
+    </div><!-- end box -->
+    
+    <h2 class="message" id="msg">{{msg}}</h2><!-- end message -->
+    <a id="restart" [hidden]="!game.isWin" (click)="onStart()">Replay <ion-icon name="ion-android-refresh"></ion-icon></a><!-- end replay-->
+
+  </div><!-- end container -->
+
 </ion-content>

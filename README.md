@@ -1,26 +1,40 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Simon Game - Android Game
 
-## How to use this template
+Build with [Ionic 2](https://github.com/ionic-team/ionic2-app-base)
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+### Download app at [PlayStore](https://play.google.com/store/apps/details?id=com.hoakusa.simongame)
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+[Live Demo](http://simongame.hoakusa.com)
 
-### With the Ionic CLI:
+Simon Game is an electronic game of memory skills, requires player listen to music (or sound) then repeat what they hear in order. At each level, game device plays sounds and show the light (red, green, yellow, blue) which correspond to the sound order. Player has to remember the order of sound and light position. After game device done, playes has to perform what they heard in the order as game device played before. If player plays right, he will pass to next level, if wrong answer, game will restart.
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+My Simon Game is a web app game built by Javascript, one of project challenges in [FreeCodeCamp](https://www.freecodecamp.com) Development Program. Functions in web app:
+* Player will see how computer play with light and sound in order.
+* Computer can check whether player play right or wrong syntax.
+* Player can see the different light colors and different sounds in each level.
+* Player can choose Normal mode or Strict mode.
+* In Normal mode, if player plays wrong, computer will replay the song at this level again. However, in Strict mode, player will be moved to Level 1 and restart again.
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+### See more app at my [PlayStore](https://play.google.com/store/apps/developer?id=Alice%20Pham&hl=en)
 
-Then, to run it, cd into `myBlank` and run:
+## Design
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+Game materials was made by [An Pham](http://hoakusa.com), view [project description](http://hoakusa.com/works/simon-game) on homepage.
 
-Substitute ios for android if not on a Mac.
+# Getting Started
+
+## Installing & Development
+
+1. Download/Clone the folder: `git clone https://github.com/hoakusa/Simon-game-Android.git`
+2. Access your local folder:  `cd yourfolder`
+3. Install dependencies: `npm install`
+4. Run app in development browser: `ionic serve`
+
+## Deploying app to a device
+
+Make sure you have slready installed [Android SDK](https://developer.android.com/studio/index.html) or Xcode
+Run `ionic cordova run android --prod --release`
+or  `ionic cordova build android --prod --release`
+
+### See full doc at my [Ionic documentation](https://ionicframework.com/docs/intro/deploying/)
 
