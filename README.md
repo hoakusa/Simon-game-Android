@@ -36,5 +36,9 @@ Make sure you have slready installed [Android SDK](https://developer.android.com
 Run `ionic cordova run android --prod --release`
 or  `ionic cordova build android --prod --release`
 
-### See full doc at my [Ionic documentation](https://ionicframework.com/docs/intro/deploying/)
+### See full doc at [Ionic documentation](https://ionicframework.com/docs/intro/deploying/)
+
+## License
+
+MIT
 
